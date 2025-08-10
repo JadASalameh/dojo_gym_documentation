@@ -31,7 +31,7 @@ What happens from `go run` → HTTP request → DB → JSON response → back to
 ```go
 func main() {
     application := app.NewApp()
-    fmt.Println("🚀 Server running at http://localhost:8080")
+    fmt.Println("Server running at http://localhost:8080")
     log.Fatal(http.ListenAndServe(":8080", application.Router))
 }
 ```
